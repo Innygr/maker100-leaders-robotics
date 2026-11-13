@@ -310,6 +310,7 @@ void printStatus() {
 
 void processCommand(String command) {
   command.trim();
+  String originalCommand = command;  // Preserve filename/path casing.
   command.toLowerCase();
   if (command.length() == 0) return;
 
