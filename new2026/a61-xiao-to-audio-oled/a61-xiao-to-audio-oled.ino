@@ -322,7 +322,7 @@ void processCommand(String command) {
   } else if (command == "video") {
     startVideo(DEFAULT_VIDEO_FILE);
   } else if (command.startsWith("video file ")) {
-    startVideo(command.substring(11));
+    startVideo(originalCommand.substring(11));
   } else if (command == "video pause") {
     if (videoPlaying) {
       videoPaused = true;
